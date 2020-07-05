@@ -22,7 +22,7 @@ function App(props) {
 
   useEffect(() => {
     if(gameState._id!==""){
-      props.history.push('/game/'+gameState._id)
+      props.history.push('/typer/game/'+gameState._id)
     }
     return ()=>{
       socket.removeAllListeners()
@@ -31,7 +31,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <RouterSocket/>
+      <RouterSocket {...props} gameState={gameState}/>
     </div>
   );
 }
