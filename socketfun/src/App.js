@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import RouterSocket from './Router';
+import socket from './sockeConfig'
+import { withRouter } from 'react-router-dom';
 
-function App() {
+
+function App(props) {
+
+  const [gameState, setGameState] = useState({
+          _id:"",
+           idOpen:false,
+           players:[],
+           words:[]})
+
+  useEffect(() => {
+    socket.on('updateGame',game=>{
+      console.log(game)
+      setGameState(game)
+    })
+  }, [])
+
+  useEffect(() => {
+    if(gameState._id!==""){
+      props.history.push('/game/'+gameState._id)
+    }
+    return ()=>{
+      socket.removeAllListeners()
+    }
+  }, [gameState._id])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterSocket/>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
