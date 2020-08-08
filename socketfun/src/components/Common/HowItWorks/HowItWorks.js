@@ -1,9 +1,9 @@
 import React from 'react'
 import './HowItWorks.css'
 
-export default function HowItWorks() {
+export default function HowItWorks(props) {
     return (
-        <div className="out HowToPlay">
+        <div className={"out HowToPlay "+props.className}>
             <div className="HowWorksHeading">How to play</div>
             <ul className="HowWorksSubHeading">
                 <li>Invite players with the inviate code</li>

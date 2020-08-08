@@ -5,6 +5,7 @@ import './StartBtn.css'
 import HowItWorks from '../Common/HowItWorks/HowItWorks';
 import InviteCode from '../Common/InviteCode/InviteCode';
 import PlayerInLobby from '../Common/PlayerInLobby/PlayerInLobby';
+import Square from '../../neumorphism/Square/Square';
 
 function StartBtn({player, gameID}) {
 
@@ -23,16 +24,11 @@ function StartBtn({player, gameID}) {
         // null
                                         // <span>Please wait <b>admin</b> should start the game</span>
 
-        // <div className="GameMenu ManuDiv">
-        // <div className="Headings HeadMain" style={{marginBottom:'50px'}}>Create Game</div>
-        //     <div className="">
-        //     <Button 
-        //          onClick={handleClick}>Start Game</Button>
-        //     </div>
-        // </div>
+    // (isPartyLeader && showBtn) ? 
+        true?
         <div className="MainFlexSTartBtn">
             <div className="FlexStartItem1">
-                <HowItWorks/>
+                <HowItWorks className="HowPadding"/>
             </div>
             <div className="FlexStartItem2">
                 <div className="in HRLine"></div>
@@ -43,13 +39,20 @@ function StartBtn({player, gameID}) {
                     <div style={{marginTop:'30px'}}>
                          <PlayerInLobby/>
                     </div>
-                    <div style={{marginTop:'100px'}}>
+                    <div className="startbn">
                         <Button 
                             onClick={handleClick}>Start Game</Button>
                     </div>
                 </div>
             </div>
         </div>
+        :
+        <div className="MainFlexSTartBtn">
+           <Square className="PleaseWaitStart">
+            <span>Please wait <b>admin</b> should start the game...</span>
+           </Square>
+        </div>
+    
                                     
     )
 }
