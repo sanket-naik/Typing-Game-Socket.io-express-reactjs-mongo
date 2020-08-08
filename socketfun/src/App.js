@@ -32,8 +32,7 @@ function App(props) {
 
   return (
     <div className="App">
-      {/* <RouterSocket {...props} gameState={gameState}/> */}
-      <StartBtn/>
+      <RouterSocket {...props} gameState={gameState}/>
     </div>
   );
 }

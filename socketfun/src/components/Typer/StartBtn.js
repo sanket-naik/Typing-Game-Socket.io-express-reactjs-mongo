@@ -9,23 +9,15 @@ import Square from '../../neumorphism/Square/Square';
 
 function StartBtn({player, gameID}) {
 
-    // const[showBtn, setShowBtn]=useState(true)
-    // const{isPartyLeader}=player;
+    const[showBtn, setShowBtn]=useState(true)
+    const{isPartyLeader}=player;
 
     const handleClick=(e)=>{
-        // socket.emit('timer', {playerID : player._id, gameID});
-        // setShowBtn(false)
+        socket.emit('timer', {playerID : player._id, gameID});
+        setShowBtn(false)
     }
     return (
-    //    (isPartyLeader && showBtn) ? 
-        // <Button 
-        // onClick={handleClick}>Start Game</Button>
-        // :
-        // null
-                                        // <span>Please wait <b>admin</b> should start the game</span>
-
-    // (isPartyLeader && showBtn) ? 
-        true?
+    (isPartyLeader && showBtn) ? 
         <div className="MainFlexSTartBtn">
             <div className="FlexStartItem1">
                 <HowItWorks className="HowPadding"/>
