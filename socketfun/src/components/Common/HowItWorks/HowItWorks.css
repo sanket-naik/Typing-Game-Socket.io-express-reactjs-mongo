@@ -1,0 +1,21 @@
+.HowToPlay{
+    width: fit-content;
+    padding: 25px 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #696969;
+}
+
+.HowWorksHeading{
+    font-size: 16px;
+}
+
+.HowWorksSubHeading{
+    line-height: 1.8;
+    font-size: 13px;
+    padding: 0px;
+    padding-left: 25px;
+}

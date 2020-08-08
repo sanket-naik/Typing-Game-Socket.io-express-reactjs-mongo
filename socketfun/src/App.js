@@ -3,7 +3,8 @@ import './App.css';
 import RouterSocket from './Router';
 import socket from './sockeConfig'
 import { withRouter } from 'react-router-dom';
-
+import './neumorphism/styles.css'
+import StartBtn from './components/Typer/StartBtn';
 
 function App(props) {
 
@@ -31,7 +32,8 @@ function App(props) {
 
   return (
     <div className="App">
-      <RouterSocket {...props} gameState={gameState}/>
+      {/* <RouterSocket {...props} gameState={gameState}/> */}
+      <StartBtn/>
     </div>
   );
 }

@@ -1,0 +1,43 @@
+.shadow{
+     /* For Neumorphism Effect */
+     /* color: #31456A;; */
+     /* background-color:#E0E5EC;
+     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5); */
+
+    /* For Neumorphism Effect 2 */
+    color: #686868;
+    background: linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
+    box-shadow: -12px -12px 18px rgba(255, 255, 255, 0.8), 3px 3px 10px rgba(166, 180, 200, 0.7);
+}
+
+
+.Headings{
+    color: #686868;
+    font-size: 28px;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    
+    box-shadow: inset -3px -3px 7px #FFFFFF, inset 3px 3px 7px rgba(136, 165, 191, 0.48);
+
+
+}
+.shadow:active{
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(166, 180, 200, 0.75);
+}
+
+/* .shadow:hover{
+    box-shadow: inset 3px 3px 7px #FFFFFF, inset 3px 3px 7px rgba(136, 165, 191, 0.48);
+} */
+
+.out{
+    background: linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
+    /* box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8), 10px 10px 20px rgba(166, 180, 200, 0.7); */
+    box-shadow: -12px -12px 18px rgba(255, 255, 255, 0.8), 3px 3px 10px rgba(166, 180, 200, 0.7);
+}
+
+.in{
+    background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+    /* box-shadow: inset -3px -3px 7px #FFFFFF, inset 3px 3px 7px rgba(136, 165, 191, 0.48); */
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(166, 180, 200, 0.75);
+}

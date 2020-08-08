@@ -1,0 +1,26 @@
+.GameMenu{
+    text-align: center;
+}
+
+
+.ManuDiv{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin-top: 35vh;
+}
+
+.HeadMain{
+    margin: 0 auto;
+}
+
+.InnerBrnMain{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.ManuflexItem{
+    margin: 0px 20px;
+}

@@ -1,0 +1,25 @@
+.InputStyle{
+    display: flex;
+    border: none;
+    border-radius: 40px;
+    /* padding: 10px 0px; */
+}
+
+.IconInput{
+    width: 40px;
+    /* border: 1px solid red; */
+    /* padding:10px 0px 0px 5px */
+   
+}
+
+.IconInp{
+    padding:13px 0px 0px 5px
+}
+
+.InputMain{
+    border: none;
+    height: 40px;
+    width: fit-content;
+    background-color: transparent;
+    color:#686868;
+}

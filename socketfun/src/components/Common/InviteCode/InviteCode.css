@@ -1,0 +1,29 @@
+.InviateTotalFlex{
+    display: flex;
+}
+
+.InviteInput{
+    width: 200px;
+    padding: 13px 20px;
+    color: #696969;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.CopyBtn{
+    border-radius: 8px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 14px;
+}
+
+.PlaceholdInvite{
+    font-size: 14px;
+    color: #696969;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
