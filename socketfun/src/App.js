@@ -19,14 +19,14 @@ function App(props) {
       console.log(game)
       setGameState(game)
     })
+    return ()=>{
+      socket.removeAllListeners()
+    }
   }, [])
 
   useEffect(() => {
     if(gameState._id!==""){
       props.history.push('/typer/game/'+gameState._id)
-    }
-    return ()=>{
-      socket.removeAllListeners()
     }
   }, [gameState._id])
 

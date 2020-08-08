@@ -16,7 +16,7 @@ export default function CreateTyper() {
         e.preventDefault();
         socket.emit('create-game', name)
     }
-
+ 
     return (
         <div>
             <div className="GameMenu ManuDiv">

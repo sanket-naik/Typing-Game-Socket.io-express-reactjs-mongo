@@ -8,6 +8,7 @@ function CountDown() {
     useEffect(() => {
        socket.on('timer',(data)=>{
            setTimer(data);
+           console.log(data)
        })
        socket.on('done',()=>{
            socket.removeListener('timer')
